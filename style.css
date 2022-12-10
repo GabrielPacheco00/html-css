@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*cabeçalho*/
 header{
     background: #bbbbbb;
     padding: 20px 0;
@@ -37,7 +38,8 @@ nav{
     top: 110px;
     right: 0px;
 }
-
+/*fim do cabeçalho*/
+/*css da pagina produtos*/
 .produtos{
     width: 940px;
     margin:0 auto;
@@ -63,7 +65,7 @@ nav{
     border-color: green;
 }
 .produtos li:hover h2{
-    font-size:34px;
+    font-size:32px;
     box-sizing: border-box;
 }
 .produtos h2{
@@ -79,6 +81,8 @@ nav{
     margin-top: 10px;
 
 }
+/*fim css pagina produtos/
+/* rodape */
 footer{
     clear: right;
     text-align: center;
@@ -90,6 +94,8 @@ footer{
     margin:20px 0 0;
     
 }
+/*fim do rodape*/
+/*css do contato*/
 .main-center{
 	width: 940px;
 	margin: 0 auto;
@@ -140,7 +146,8 @@ td,th{
     border:1px solid black;
     padding: 8px 15px;
 }
-/* css da pagina home */
+/*fim css do contato*/
+/* css da pagina home */    
 .banner{
     width:100%;
 }
@@ -221,11 +228,9 @@ td,th{
     width: 100%;
 	margin: 0 auto;
 }
+/*fim do css da pagina home*/
 @media screen and (max-width: 992px) {
-    .principal, .caixa, .conteudo-beneficios, .video, .mapa-conteudo {
-      width: auto;
-    
-    }
+    /*adaptaçao para celular do cabeçalho e rodape*/
     .logo{
         text-align: center;
         width: auto;   
@@ -236,24 +241,44 @@ td,th{
     .caixa{
         text-align: center;
     }   
-    .caixa h1{
-        text-align: center;
-    }
     nav{
         position: static;
     }
     .caixa ul{
         text-align: center;
     }
+    footer{
+        width: auto;
+    }
+    /* começo principal*/
+    .principal, .caixa, .conteudo-beneficios, .video, .mapa-conteudo {
+      width: auto;    
+    }
+    
     .lista-beneficios, .img-beneficios{
         width: 100%;
     }
+    
+    /* fim principal*/
+
+    /* começo produtos*/    
     .produtos{
         width: 100vw;
         text-align: center;
     }
     .produtos li{
-        width: 50%;
+        width: 80%;
         margin:5% auto;
     }
+    /* fim produtos*/
+    
+    /* começo contatos*/
+    .main-center{
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box ;
+    }
+
+    /* fm contatos*/
+  
   }
